@@ -1,0 +1,38 @@
+.canvas-container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__modal-content {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__input {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid black;
+    outline: none;
+    font-size: 20px;
+  }
+
+  &__button {
+    align-self: flex-end;
+    margin-top: 20px;
+    padding: 8px 12px;
+    border: 1px solid black;
+    background: transparent;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  &__button:hover {
+    border: 1px solid gray;
+  }
+
+  &__canvas {
+    background-color: white;
+    border: 1px solid black;
+  }
+}

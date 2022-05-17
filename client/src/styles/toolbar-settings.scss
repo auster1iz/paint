@@ -1,0 +1,91 @@
+$toolbar-height: 40px;
+
+.toolbar {
+  position: absolute;
+  height: $toolbar-height;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  box-shadow: 0 4px 5px grey;
+
+  &__btn {
+    width: 25px;
+    height: 25px;
+    margin-left: 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-size: cover;
+  }
+
+  &__color-input {
+    margin-left: 20px;
+    cursor: pointer;
+  }
+
+  .clear {
+    padding: 4px 8px;
+    margin-left: auto;
+    background: transparent;
+    border: 1px solid black;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .clear:hover {
+    border: 1px solid gray;
+    background: rgba(0, 0, 0, 0.1);
+  }
+
+  .brush {
+    background: url("../assets/img/brush.png") no-repeat center center;
+  }
+  .line {
+    background: url("../assets/img/line.png") no-repeat center center;
+  }
+  .rect {
+    background: url("../assets/img/rect.png") no-repeat center center;
+  }
+  .circle {
+    background: url("../assets/img/circle.png") no-repeat center center;
+  }
+  .eraser {
+    background: url("../assets/img/eraser.png") no-repeat center center;
+  }
+  .undo {
+    background: url("../assets/img/undo.png") no-repeat center center;
+  }
+  .redo {
+    background: url("../assets/img/redo.png") no-repeat center center;
+  }
+  .save {
+    background: url("../assets/img/save.png") no-repeat center center;
+    margin-right: 20px;
+  }
+}
+
+.settings {
+  top: $toolbar-height;
+  margin-top: 2px;
+
+  &__input {
+    padding: 5px;
+    outline: none;
+    border: 1px solid black;
+    margin-left: 12px;
+  }
+  &__color-input {
+    margin-left: 12px;
+    cursor: pointer;
+  }
+
+  &__label {
+    margin-left: 20px;
+  }
+}
+
+.font {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
