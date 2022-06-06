@@ -2,9 +2,9 @@ Application allows you to draw simultaneously on the same canvas from different 
 
 
 To start client: 
-npm install
-npm start
+ 1. npm install
+ 2. npm start
 
 To start server:
-npm install
-npm start
+1. npm install
+2. npm start
